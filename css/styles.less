@@ -1,0 +1,52 @@
+*, 
+*:after,
+*:before {
+	box-sizing: border-box;
+}
+
+.clearfix:after,
+.clearfix:before {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+.full-slider {
+	overflow: hidden;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+
+	.inner {
+		width: 60%;
+		margin: 0 auto;
+	}
+	
+	.scroll-bar {
+		transition: transform .3s;
+	}
+	
+	.item {
+		cursor: pointer;
+		float: left;
+		opacity: .4;
+		transform: scale(.8);
+		transition: all .3s;
+
+		&.active {
+			opacity: 1;
+			transform: scale(1);
+		}
+}
