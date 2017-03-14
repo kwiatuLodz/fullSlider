@@ -1,5 +1,6 @@
 # fullSlider
 
+Very basic horizontal slider on full width.
 
 # Example
 
