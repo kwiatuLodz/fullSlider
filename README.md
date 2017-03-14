@@ -33,5 +33,9 @@ html:
 js:
 
 ```javascript
-$('.full-slider').fullSlider();
+$('.full-slider').fullSlider({
+	speed: 1,
+	before: function(item) {},
+	after: function(item) {}
+});
 ```
