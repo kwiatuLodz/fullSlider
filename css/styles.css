@@ -1,53 +1,45 @@
-*, 
+*,
 *:after,
 *:before {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
-
 .clearfix:after,
 .clearfix:before {
-	content: '';
-	display: table;
-	clear: both;
+  content: '';
+  display: table;
+  clear: both;
 }
-
-html, body {
-	margin: 0;
-	padding: 0;
+html,
+body {
+  margin: 0;
+  padding: 0;
 }
-
 img {
-	display: block;
-	max-width: 100%;
+  display: block;
+  max-width: 100%;
 }
-
 .full-slider {
-	overflow: hidden;
-	width: 100%;
-	position: absolute;
-	left: 0;
-	top: 50%;
-	transform: translateY(-50%);
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }
-
 .full-slider .inner {
-	width: 60%;
-	margin: 0 auto;
+  width: 60%;
+  margin: 0 auto;
 }
-
 .full-slider .scroll-bar {
-	transition: transform .3s;
+  transition: transform .3s;
 }
-
 .full-slider .item {
-	cursor: pointer;
-	float: left;
-	opacity: .4;
-	transform: scale(.8);
-	transition: all .3s;
+  cursor: pointer;
+  float: left;
+  opacity: .4;
+  transform: scale(0.8);
+  transition: all .3s;
 }
-
 .full-slider .item.active {
-	opacity: 1;
-	transform: scale(1);
+  opacity: 1;
+  transform: scale(1);
 }
